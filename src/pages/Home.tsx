@@ -2,11 +2,13 @@ import AboutMeCard from "../components/AboutMeCard";
 import image from "../assets/IMG_2634.jpg"
 import Experience from "../components/Experience";
 import bnl from "../assets/BNL-logo.png"
+import bio from "../assets/bio";
+
 
 function Home() {
     return (
         <>
-            <AboutMeCard imgPath={image} bio="Hello, my name is Zayd!"></AboutMeCard>
+            <AboutMeCard imgPath={image} bio={bio}></AboutMeCard>
             <Experience imgPath={bnl} companyName="Brookhaven National Laboratory" title="ML Research Intern" skills="Machine Learning, Data Processing, PyTorch" bullets={bullets}></Experience>
         </>
     )

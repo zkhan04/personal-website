@@ -2,6 +2,7 @@
   border-radius: 50%;
   max-height: 100%;
   width: auto;
+  object-fit: cover;
 }
 
 .about-me-card {
@@ -9,4 +10,51 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+}
+
+.about-me-card .bio {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.experience .experience-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.experience .skills {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.experience ul {
+  list-style-type: disc;
+}
+
+.experience li {
+  padding: 5px;
+}
+
+.experience .company-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.experience-header {
+  display: flex;
+  flex-direction: row;
 }
